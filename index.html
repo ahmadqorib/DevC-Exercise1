@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Exercise 1</title>
+    <style>
+        #box{
+            background-color:darkblue;
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+        }
+
+        #box label{
+            color: azure;
+        }
+
+        #box2{
+            background-color:darkblue;
+            width: 800px;
+            height: 50px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .nama, .jk, .tl{
+            float: left;
+        }
+
+
+    </style>
 </head>
 <body>
-    <center>
-        <h1>Biodata</h1>
-    </center>
+
+    <h1>Biodata</h1>
+    
+    <!-- coba 1 kolom -->
+    <div id="box">
+        <form action="">
+            <div class="">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" placeholder="Masukkan nama">
+            </div>
+            <div class="">
+                <label for="jk">Jenis Kelamin</label>
+                <select name="jk" id="jk">
+                    <option value="l">Laki-laki</option>
+                    <option value="p">Perempuan</option>
+                </select>
+            </div>
+            <div class="">
+                <label for="tl">Tempat Lahir</label>
+                <input type="text" id="tl" placeholder="Masukkan tempat lahir">
+            </div>
+        </form>
+    </div>
+
+    <!-- coba 3 kolom -->
+    <div id="box2">
+        <form action="">
+            <div class="nama">
+                <label for="namaa">Nama</label>
+                <input type="text" id="namaa" placeholder="Masukkan nama">
+            </div>
+            <div class="jk">
+                <label for="jk">Jenis Kelamin</label>
+                <select name="jk" id="jk">
+                    <option value="l">Laki-laki</option>
+                    <option value="p">Perempuan</option>
+                </select>
+            </div>
+            <div class="tl">
+                <label for="tl">Tempat Lahir</label>
+                <input type="text" id="tl" placeholder="Masukkan tempat lahir">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
